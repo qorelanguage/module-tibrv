@@ -6,7 +6,7 @@ The "tibrv" module provides direct TIBCO Rendezvous(R) support, allowing qore pr
 Requires qore 0.7.0 and TIBCO Rendezvous(R) headers and libraries to build.
 Note that the TIBCO C++ library (libtibrvcpp.a or libtibrvcpp64.a) must be built with the same C++ compiler that is used to build the qore library and this module.
 
-TIBCO Rendezvous(R) is a registered copyright of TIBCO, Inc.
+TIBCO Rendezvous(R) is a registered trademark of TIBCO, Inc.
 
 Documentation TBA.
 
