@@ -90,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %{module_dir}/tibrv.qmod
-%doc COPYING README ChangeLog AUTHORS
+%doc COPYING README ChangeLog AUTHORS test/tibrv-test.q
 
 %changelog
 * Tue Sep 2 2008 David Nichols <david_nichols@users.sourceforge.net>
