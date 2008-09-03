@@ -24,7 +24,7 @@ endif
 lib_LTLIBRARIES = tibrv.la
 tibrv_la_SOURCES = $(TIBRV_SOURCES)
 tibrv_la_LDFLAGS = -module -avoid-version $(TIBRV_LDFLAGS) $(TIBRVCPP_LDFLAGS)
-tibrv_la_CPPFLAGS = $(TIBRV_CPPFLAGS)
+tibrv_la_CPPFLAGS = $(TIBRV_CPPFLAGS) $(QORE_CPPFLAGS)
 
 INCLUDES = -I$(top_srcdir)/include
 
