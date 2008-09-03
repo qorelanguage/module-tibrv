@@ -1,0 +1,28 @@
+AUTOMAKE_OPTIONS = foreign
+
+SUBDIRS = src
+
+noinst_HEADERS = src/QC_TibrvCmListener.h \
+	src/QC_TibrvCmSender.h\
+	src/QC_TibrvDistributedQueue.h \
+	src/QC_TibrvFtMember.h \
+	src/QC_TibrvFtMonitor.h \
+	src/QC_TibrvListener.h \
+	src/QC_TibrvSender.h \
+	src/QoreTibrvCmListener.h \
+	src/QoreTibrvCmSender.h \
+	src/QoreTibrvCmTransport.h \
+	src/QoreTibrvDistributedQueue.h \
+	src/QoreTibrvFtMember.h \
+	src/QoreTibrvFtMonitor.h \
+	src/qore_tibrv.h \
+	src/QoreTibrvListener.h \
+	src/QoreTibrvSender.h \
+	src/QoreTibrvTransport.h \
+	src/tibrv-module.h
+
+EXTRA_DIST = COPYING ChangeLog AUTHORS README \
+	qore-tibrv-module.spec
+
+libtool: $(LIBTOOL_DEPS)
+	$(SHELL) ./config.status --recheck
