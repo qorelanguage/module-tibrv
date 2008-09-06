@@ -8,11 +8,13 @@ Note that the TIBCO C++ library (libtibrvcpp.a or libtibrvcpp64.a) must be built
 
 TIBCO Rendezvous(R) is a registered trademark of TIBCO, Inc.
 
-Documentation TBA.
+Documentation in docs/tibrv-module-doc.html
+(built from docbook sources in docs/docbook)
 
 test/example script: test/tibrv-test.q
 
-To use the new TIBCO Rendezvous support use the "%use tibrv" directive to ensure that the functionality is loaded
+To use TIBCO Rendezvous support use the "%use tibrv" directive to ensure that the functionality is loaded
+(see test/tibrv-test.q for more info)
 
 Classes supplied by this module:
  + TibrvListener         - for listening to reliable messages

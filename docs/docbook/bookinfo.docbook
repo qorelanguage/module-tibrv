@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<bookinfo>
+<title>Qore tibrv Module Documentation</title>
+<subtitle>Module Reference Manual</subtitle>
+<authorgroup>
+<author>
+<firstname>David</firstname>
+<surname>Nichols</surname>
+</author>
+</authorgroup>
+
+<date>6 September 2008</date>
+<releaseinfo>v1.0</releaseinfo>
+
+<revhistory>
+
+<revision>
+  <revnumber>1.0</revnumber>
+  <date>6 September 2008</date>
+  <authorinitials>dn</authorinitials>
+  <revremark>split from qore docs</revremark>
+</revision>
+
+</revhistory>
+
+</bookinfo>
+
+<!-- Copyright (C) 2003 - 2008 David Nichols, All Rights Reserved -->
