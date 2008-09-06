@@ -23,6 +23,7 @@ noinst_HEADERS = src/QC_TibrvCmListener.h \
 
 EXTRA_DIST = COPYING ChangeLog AUTHORS README \
 	test/tibrv-test.q \
+	docs/tibrv-module-doc.html \
 	qore-tibrv-module.spec
 
 libtool: $(LIBTOOL_DEPS)
