@@ -1,0 +1,63 @@
+2008-09-06 07:13  david_nichols
+
+	* Makefile.am, qore-tibrv-module.spec: added docs to rpm
+
+2008-09-06 06:57  david_nichols
+
+	* README, docs, docs/docbook, docs/docbook/Makefile,
+	  docs/docbook/bookinfo.docbook, docs/docbook/driver.xsl,
+	  docs/docbook/module.docbook, docs/docbook/tibrv-module.docbook,
+	  docs/img, docs/img/acrobat.gif, docs/img/acrobat_a.gif,
+	  docs/img/disk.gif, docs/img/qbullet-note.gif,
+	  docs/img/qbullet-note_a.gif, docs/img/remote.gif,
+	  docs/img/remote_a.gif, docs/img/scrollup.gif,
+	  docs/img/scrollup_a.gif, docs/img/word.gif, docs/qore-style.css,
+	  docs/tibrv-module-doc.html: added module documentation
+
+2008-09-03 12:54  david_nichols
+
+	* README: readme update
+
+2008-09-03 12:41  david_nichols
+
+	* src/Makefile.am: build fixes
+
+2008-09-03 12:11  david_nichols
+
+	* COPYING: updated license for modules to LGPL (*not* GPL)
+
+2008-09-03 12:07  david_nichols
+
+	* README: udpated READMEs
+
+2008-09-03 11:57  david_nichols
+
+	* ChangeLog, Makefile.am, configure.ac, libtool,
+	  qore-tibrv-module.spec: updated build and fixed spec file
+
+2008-09-03 11:51  david_nichols
+
+	* ., AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, NEWS,
+	  README, configure.ac, libtool, ltmain.sh, m4, m4/acx_pthread.m4,
+	  qore-tibrv-module.spec, reconf.sh, src, src/Makefile.am,
+	  src/QC_TibrvCmListener.cc, src/QC_TibrvCmListener.h,
+	  src/QC_TibrvCmSender.cc, src/QC_TibrvCmSender.h,
+	  src/QC_TibrvDistributedQueue.cc, src/QC_TibrvDistributedQueue.h,
+	  src/QC_TibrvFtMember.cc, src/QC_TibrvFtMember.h,
+	  src/QC_TibrvFtMonitor.cc, src/QC_TibrvFtMonitor.h,
+	  src/QC_TibrvListener.cc, src/QC_TibrvListener.h,
+	  src/QC_TibrvSender.cc, src/QC_TibrvSender.h,
+	  src/QoreTibrvCmListener.cc, src/QoreTibrvCmListener.h,
+	  src/QoreTibrvCmSender.cc, src/QoreTibrvCmSender.h,
+	  src/QoreTibrvCmTransport.cc, src/QoreTibrvCmTransport.h,
+	  src/QoreTibrvDistributedQueue.cc,
+	  src/QoreTibrvDistributedQueue.h, src/QoreTibrvFtMember.cc,
+	  src/QoreTibrvFtMember.h, src/QoreTibrvFtMonitor.cc,
+	  src/QoreTibrvFtMonitor.h, src/QoreTibrvListener.cc,
+	  src/QoreTibrvListener.h, src/QoreTibrvSender.cc,
+	  src/QoreTibrvSender.h, src/QoreTibrvTransport.cc,
+	  src/QoreTibrvTransport.h, src/qore_tibrv.h,
+	  src/single-compilation-unit.cc, src/tibrv-module.cc,
+	  src/tibrv-module.h, src/tibrv.cc, test, test/tibrv-test.q:
+	  initial repository import as independent project
+
