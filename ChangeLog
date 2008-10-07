@@ -1,3 +1,12 @@
+2008-09-09 07:19  david_nichols
+
+	* ChangeLog, qore-tibrv-module.spec: added ChangeLog, updated
+	  license in spec file to LGPL
+
+2008-09-08 17:49  david_nichols
+
+	* Makefile.am, libtool, qore-tibrv-module.spec: fixed doc packaging
+
 2008-09-06 07:13  david_nichols
 
 	* Makefile.am, qore-tibrv-module.spec: added docs to rpm
