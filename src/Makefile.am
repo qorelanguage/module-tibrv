@@ -37,5 +37,5 @@ endif
 endif
 
 install-exec-hook:
-	mv $(libdir)/tibrv.$(MODULE_SUFFIX) $(libdir)/tibrv.qmod
-	rm -f $(libdir)/tibrv.la
+	mv $(DESTDIR)$(libdir)/tibrv.$(MODULE_SUFFIX) $(DESTDIR)$(libdir)/tibrv.qmod
+	rm -f $(DESTDIR)$(libdir)/tibrv.la
