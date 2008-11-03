@@ -24,11 +24,12 @@
 
 #define _QORE_TIBRV_MODULE_H
 
-#include <qore/common.h>
-#include <qore/AbstractQoreNode.h>
+#include "../config.h"
 
-class QoreStringNode *tibrv_module_init();
-void tibrv_module_ns_init(class QoreNamespace *rns, class QoreNamespace *qns);
+#include <qore/Qore.h>
+
+QoreStringNode *tibrv_module_init();
+void tibrv_module_ns_init(QoreNamespace *rns, QoreNamespace *qns);
 void tibrv_module_delete();
 
 #endif

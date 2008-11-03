@@ -22,6 +22,7 @@ noinst_HEADERS = src/QC_TibrvCmListener.h \
 	src/tibrv-module.h
 
 EXTRA_DIST = COPYING ChangeLog AUTHORS README \
+	RELEASE-NOTES \
 	test/tibrv-test.q \
 	docs/tibrv-module-doc.html \
         docs/qore-style.css \

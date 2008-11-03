@@ -22,9 +22,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <qore/Qore.h>
-
 #include "qore_tibrv.h"
+
 #include "QC_TibrvListener.h"
 #include "QC_TibrvSender.h"
 #include "QC_TibrvFtMember.h"
@@ -38,9 +37,8 @@
 
 #include <string.h>
 
-#ifndef QORE_MONOLITHIC
 DLLEXPORT char qore_module_name[] = "tibrv";
-DLLEXPORT char qore_module_version[] = "0.1";
+DLLEXPORT char qore_module_version[] = PACKAGE_VERSION;
 DLLEXPORT char qore_module_description[] = "TIBCO Rendezvous module";
 DLLEXPORT char qore_module_author[] = "David Nichols";
 DLLEXPORT char qore_module_url[] = "http://qore.sourceforge.net";
@@ -50,12 +48,10 @@ DLLEXPORT qore_module_init_t qore_module_init = tibrv_module_init;
 DLLEXPORT qore_module_ns_init_t qore_module_ns_init = tibrv_module_ns_init;
 DLLEXPORT qore_module_delete_t qore_module_delete = tibrv_module_delete;
 DLLEXPORT qore_license_t qore_module_license = QL_LGPL;
-#endif
 
 static QoreNamespace *tibns;
 
-static void init_namespace()
-{
+static void init_namespace() {
    tibns = new QoreNamespace("Tibrv");
    tibns->addSystemClass(initTibrvListenerClass());
    tibns->addSystemClass(initTibrvSenderClass());
@@ -72,13 +68,11 @@ static void init_namespace()
    tibns->addConstant("TIBRVFT_QORE_STOP", new QoreBigIntNode(-1));
 }
 
-class QoreStringNode *tibrv_module_init()
-{
+QoreStringNode *tibrv_module_init() {
    // initialize rendezvous
    TibrvStatus status = Tibrv::open();
-   if (status != TIBRV_OK)
-   {
-      class QoreStringNode *err = new QoreStringNode;
+   if (status != TIBRV_OK) {
+      QoreStringNode *err = new QoreStringNode;
       err->sprintf("cannot initialize TIB/RV library: status=%d: %s\n", (int)status, status.getText());
       return err;
    }
@@ -89,17 +83,13 @@ class QoreStringNode *tibrv_module_init()
    return NULL;
 }
 
-void tibrv_module_ns_init(class QoreNamespace *rns, class QoreNamespace *qns)
-{
+void tibrv_module_ns_init(QoreNamespace *rns, QoreNamespace *qns) {
    QORE_TRACE("tibrv_module_ns_init()");
    qns->addInitialNamespace(tibns->copy());
-
 }
 
-void tibrv_module_delete()
-{
+void tibrv_module_delete() {
    QORE_TRACE("tibrv_module_delete()");
    Tibrv::close();
    delete tibns;
-
 }
