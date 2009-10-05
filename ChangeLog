@@ -1,3 +1,62 @@
+2009-09-21 11:07  david_nichols
+
+	* configure.ac: updated module configure scripts to select 64-bit
+	  target mode by default on snow leopard i386
+
+2009-09-10 06:49  david_nichols
+
+	* configure.ac: updated configure.ac to properly compile in 32-bit
+	  mode on OSX snow leopard (10.6)
+
+2009-07-20 13:16  david_nichols
+
+	* configure.ac, qore-tibrv-module.spec: added opensuse 11.2
+	  detection to spec file, fixed rhel detection in spec files,
+	  updated configure.ac to work with older versions of autotools
+
+2009-06-08 08:38  david_nichols
+
+	* qore-tibrv-module.spec: fixed qore module dir detection
+
+2009-06-02 05:24  david_nichols
+
+	* qore-tibrv-module.spec: fixed typo in sles version detection
+
+2009-01-08 18:43  david_nichols
+
+	* qore-tibrv-module.spec: simplified spec files a little
+
+2009-01-08 15:13  david_nichols
+
+	* qore-tibrv-module.spec: commented-out additional "Source0" line
+	  so that packages will build on Fedora 10 (OBS)
+
+2009-01-08 14:44  david_nichols
+
+	* reconf.sh: updated reconf.sh to look for glibtoolize as well as
+	  libtoolize
+
+2009-01-07 13:38  david_nichols
+
+	* RELEASE-NOTES: updated release notes
+
+2009-01-07 13:37  david_nichols
+
+	* Makefile.am, configure.ac, ltmain.sh, qore-tibrv-module.spec,
+	  reconf.sh: updated version to 0.2.1; updated reconf.sh to use
+	  libtoolize to generate ltmain.sh
+
+2008-11-19 15:19  david_nichols
+
+	* qore-tibrv-module.spec: corrected version number
+
+2008-11-03 15:31  david_nichols
+
+	* ChangeLog, Makefile.am, RELEASE-NOTES, configure.ac,
+	  qore-tibrv-module.spec, src/Makefile.am, src/tibrv-module.cc,
+	  src/tibrv-module.h: updated to new module handling; updated
+	  version to 0.0.2
+
 2008-10-30 17:20  david_nichols
 
 	* qore-tibrv-module.spec: various fixes

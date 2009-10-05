@@ -105,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING README RELEASE-NOTES ChangeLog AUTHORS test/tibrv-test.q docs/tibrv-module-doc.html docs/qore-style.css docs/img
 
 %changelog
-* Web Jan 7 2009 David Nichols <david_nichols@users.sourceforge.net>
+* Wed Jan 7 2009 David Nichols <david_nichols@users.sourceforge.net>
 - updated version to 0.2.1
 
 * Tue Sep 2 2008 David Nichols <david_nichols@users.sourceforge.net>
