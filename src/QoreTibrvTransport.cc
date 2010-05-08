@@ -104,10 +104,10 @@ int QoreTibrvTransport::valueToField(const char *key, const AbstractQoreNode *v,
       TibrvMsgDateTime dt;      
 #ifdef _QORE_HAS_TIME_ZONES
       dt.sec = date->getEpochSecondsUTC();
-      dt.ns = date->getMicrosecond() * 1000;
+      dt.nsec = date->getMicrosecond() * 1000;
 #else
       dt.sec = date->getEpochSeconds();
-      dt.ns = date->getMillisecond() * 1000000;
+      dt.nsec = date->getMillisecond() * 1000000;
 #endif
       msg->addDateTime(key, dt);
       return 0;
@@ -289,9 +289,9 @@ AbstractQoreNode *QoreTibrvTransport::fieldToNode(TibrvMsgField *field, class Ex
 
       case TIBRVMSG_DATETIME:
 #ifdef _QORE_HAS_TIME_ZONES
-	 return DateTimeNode::makeAbsolute(currentTZ(), (int64)data.date.sec, data.date.ns / 1000);
+	 return DateTimeNode::makeAbsolute(currentTZ(), (int64)data.date.sec, data.date.nsec / 1000);
 #else
-	 return new DateTimeNode((int64)data.date.sec, data.data.ns / 1000000);
+	 return new DateTimeNode((int64)data.date.sec, data.data.nsec / 1000000);
 #endif
 
       case TIBRVMSG_OPAQUE:
