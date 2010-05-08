@@ -55,7 +55,7 @@
 
 Summary: TIBCO Rendezvous integration module for Qore
 Name: qore-tibrv-module
-Version: 0.2.1
+Version: 0.2.2
 Release: 1%{dist}
 License: LGPL
 Group: Development/Languages
@@ -105,6 +105,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING README RELEASE-NOTES ChangeLog AUTHORS test/tibrv-test.q docs/tibrv-module-doc.html docs/qore-style.css docs/img
 
 %changelog
+* Sat May 8 2010 David Nichols <david_nichols@users.sourceforge.net>
+- updated version to 0.2.2
+
 * Wed Jan 7 2009 David Nichols <david_nichols@users.sourceforge.net>
 - updated version to 0.2.1
 

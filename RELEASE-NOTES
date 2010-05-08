@@ -1,4 +1,13 @@
 -------------
+Version 0.2.2
+-------------
+
+updated date/time de/serialization to use new APIs when available with
+resolution to the microsecond; when not then at least support time resolution
+to the millisecond
+
+
+-------------
 Version 0.2.1
 -------------
 
