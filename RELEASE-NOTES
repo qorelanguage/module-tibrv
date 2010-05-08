@@ -2,9 +2,18 @@
 Version 0.2.2
 -------------
 
-updated date/time de/serialization to use new APIs when available with
-resolution to the microsecond; when not then at least support time resolution
-to the millisecond
+when compiled with qore >= 0.8.0:
+* updated date/time de/serialization to use new APIs when available with
+  resolution to the microsecond
+* Qore DateTimeNode -> TibrvMsgDateTime conversion is done in UTC; that is
+  date/time values are sent over the wire in UTC
+* TibrvMsgDateTime -> Qore DateTimeNode conversions are done assuming UTC and
+  tagging the value with the local time zone of the calling code
+* sending date/time values in UTC more closely follows the convention used by
+  the TIBCO adapter SDK 
+
+when compiled with qore < 0.8.0:
+* date/time conversions updated to support time resolution to the millisecond
 
 
 -------------
