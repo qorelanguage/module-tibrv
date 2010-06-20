@@ -1,3 +1,74 @@
+2010-06-14 15:51  david_nichols
+
+	* docs/tibrv-module-doc.html: updated docs
+
+2010-06-14 14:04  david_nichols
+
+	* docs/docbook/get-docbook-root.sh: added missing file
+
+2010-06-10 14:22  david_nichols
+
+	* docs/docbook/Makefile, docs/docbook/tibrv-module.docbook,
+	  docs/qore-style.css, docs/tibrv-module-doc.html: updated docs
+
+2010-05-12 11:49  david_nichols
+
+	* configure.ac: solaris and sun studio compile and warning
+	  fixes/enhancements
+
+2010-05-11 14:45  david_nichols
+
+	* configure.ac: compile fixes for solaris
+
+2010-05-11 14:44  david_nichols
+
+	* reconf.sh: compile fixes for solaris
+
+2010-05-08 17:32  david_nichols
+
+	* RELEASE-NOTES: updated release notes for new date/time
+	  serialization approach; notably that date/time values are send in
+	  UTC and assumed to be UTC when received
+
+2010-05-08 11:39  david_nichols
+
+	* src/QoreTibrvTransport.cc, test/tibrv-test.q: fixed typos in
+	  nanoseconds field, updated test to include millisecond portion of
+	  time for testing
+
+2010-05-08 10:40  david_nichols
+
+	* RELEASE-NOTES, configure.ac, qore-tibrv-module.spec: updated
+	  release version to 0.2.2
+
+2010-05-08 10:37  david_nichols
+
+	* src/QoreTibrvTransport.cc: fixed date/time conversions to use new
+	  APIs when available; if not available then at least serialize and
+	  deserialize date/time values with millisecond resolution
+
+2009-12-09 12:58  david_nichols
+
+	* configure.ac: fixed all modules to use decimal comparisons with
+	  the qore version string instead of octal so that they will still
+	  compile with qore v0.8.0 and up...
+
+2009-11-22 06:03  david_nichols
+
+	* configure.ac: updated configure to assume 64-bit build if
+	  host_cpu = "amd64"
+
+2009-10-30 08:22  david_nichols
+
+	* configure.ac: updated all module configure scripts to use gnutar
+	  on darwin to avoid picking up OSX resource files in source
+	  releases
+
+2009-10-05 09:09  david_nichols
+
+	* ChangeLog, RELEASE-NOTES, qore-tibrv-module.spec: minor doc
+	  updates
+
 2009-09-21 11:07  david_nichols
 
 	* configure.ac: updated module configure scripts to select 64-bit
