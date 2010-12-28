@@ -7,6 +7,9 @@
 %enable-all-warnings
 %exec-class tibrv_test
 
+# in case running with qore 0.8.1+
+%requires xml
+
 const Subject = "qore.test";
 const CmSubject = "qore.cmtest";
 
